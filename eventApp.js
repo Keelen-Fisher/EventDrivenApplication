@@ -14,12 +14,13 @@ eventDrive.on('DELIVERY', driverHandler);
 setInterval(() => {
   const order = {
     store: chance.company(),
-    orderIder: chance.guid({version: 4}),
+    orderId: chance.guid({version: 4}),
     name: chance.name(),
     address: chance.address(),
   };
 
   console.log('------------Starting a New order---------------------');
   eventDrive.emit('PICKUP', {order});
+  eventDrive.emit('TRANSIT', {order});
   eventDrive.emit('DELIVERY', {order});
 }, 5000);
