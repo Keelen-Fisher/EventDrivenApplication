@@ -9,10 +9,11 @@ const chance = new Chance();
 
 eventDrive.on('PICKUP', driverHandler);
 eventDrive.on('TRANSIT', vendorHandler);
-eventDrive.on('DELIVERY', driverHandler);
+// eventDrive.on('DELIVERY', driverHandler);
 
 setInterval(() => {
   const order = {
+    time: chance.date(),
     store: chance.company(),
     orderId: chance.guid({version: 4}),
     name: chance.name(),
@@ -22,5 +23,5 @@ setInterval(() => {
   console.log('------------Starting a New order---------------------');
   eventDrive.emit('PICKUP', {order});
   eventDrive.emit('TRANSIT', {order});
-  eventDrive.emit('DELIVERY', {order});
+  // eventDrive.emit('DELIVERY', {order});
 }, 5000);
