@@ -13,6 +13,7 @@ eventDrive.on('DELIVERY', driverHandler);
 
 setInterval(() => {
   const order = {
+    time: chance.date(),
     store: chance.company(),
     orderId: chance.guid({version: 4}),
     name: chance.name(),
