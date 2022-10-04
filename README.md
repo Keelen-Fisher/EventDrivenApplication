@@ -25,8 +25,11 @@
 
 ### Resources
 
-- [PR link]()
+- [PR link](https://github.com/Keelen-Fisher/EventDrivenApplication/pull/2)
 
 - [Deployed Link]()
 
 ### Tests
+
+- node eventApp.js
+
