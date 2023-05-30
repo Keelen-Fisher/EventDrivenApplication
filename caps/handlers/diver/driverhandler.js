@@ -1,6 +1,6 @@
 'use strict';
 
-let eventDrive = require('../eventDrive');
+let eventDrive = require('../../eventDrive');
 
 module.exports = (payload) => {
   console.log(`Order is being picked up: ${payload.orderId}`);

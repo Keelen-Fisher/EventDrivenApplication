@@ -32,4 +32,3 @@
 ### Tests
 
 - node eventApp.js
-
