@@ -1,7 +1,5 @@
 'use strict';
 
-const Event = require('events');
-
-const eventDrive = new Event();
-
-module.exports = eventDrive;
+const EE = require('events');
+const events = new EE();
+module.exports = events;
