@@ -9,7 +9,7 @@ require('./caps/clients/driver/driverhandler.js');
 //-----listeners-----//
 // Listens to ALL events in the Event Pool.
 eventDrive.on('PICKUP', (payload) => logger('PICKUP', payload));
-// eventDrive.on('TRANSIT', (payload) => logger('TRANSIT', payload));
+eventDrive.on('TRANSIT', (payload) => logger('TRANSIT', payload));
 eventDrive.on('DELIVERY', (payload) => logger('DELIVERY', payload));
 
 
