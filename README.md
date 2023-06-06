@@ -23,6 +23,8 @@
 
 ![UML](UML%20Lab%2011%20pt.2.png)
 
+![UML Diagram In Association with Stephen:](Lab%2011%20UML.png)
+
 ### Resources
 
 - [PR link](https://github.com/Keelen-Fisher/EventDrivenApplication/pull/2)
